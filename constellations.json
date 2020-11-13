@@ -1,0 +1,354 @@
+{
+	"And" : {
+		"rus" : "Андромеда",
+		"greek" : "Andromeda"
+	},
+	"Ant" : {
+		"rus" : "Насос",
+		"greek" : "Antlia"
+	},
+	"Aps" : {
+		"rus" : "Райская Птица",
+		"greek" : "Apus"
+	},
+	"Aql" : {
+		"rus" : "Орёл",
+		"greek" : "Aquila"
+	},
+	"Aqr" : {
+		"rus" : "Водолей",
+		"greek" : "Aquarius"
+	},
+	"Ara" : {
+		"rus" : "Жертвенник",
+		"greek" : "Ara"
+	},
+	"Ari" : {
+		"rus" : "Овен",
+		"greek" : "Aries"
+	},
+	"Aur" : {
+		"rus" : "Возничий",
+		"greek" : "Auriga"
+	},
+	"Boo" : {
+		"rus" : "Волопас",
+		"greek" : "Bootes"
+	},
+	"Cae" : {
+		"rus" : "Резец",
+		"greek" : "Caelum"
+	},
+	"Cam" : {
+		"rus" : "Жираф",
+		"greek" : "Camelopardalis"
+	},
+	"Cap" : {
+		"rus" : "Козерог",
+		"greek" : "Capricornus"
+	},
+	"Car" : {
+		"rus" : "Киль",
+		"greek" : "Carina"
+	},
+	"Cas" : {
+		"rus" : "Кассиопея",
+		"greek" : "Cassiopeia"
+	},
+	"Cen" : {
+		"rus" : "Центавр",
+		"greek" : "Centaurus"
+	},
+	"Cep" : {
+		"rus" : "Цефей",
+		"greek" : "Cepheus"
+	},
+	"Cet" : {
+		"rus" : "Кит",
+		"greek" : "Cetus"
+	},
+	"Cha" : {
+		"rus" : "Хамелеон",
+		"greek" : "Chamaeleon"
+	},
+	"Cir" : {
+		"rus" : "Циркуль",
+		"greek" : "Circinus"
+	},
+	"CMa" : {
+		"rus" : "Большой Пёс",
+		"greek" : "Canis Major"
+	},
+	"CMi" : {
+		"rus" : "Малый Пёс",
+		"greek" : "Canis Minor"
+	},
+	"Cnc" : {
+		"rus" : "Рак",
+		"greek" : "Cancer"
+	},
+	"Col" : {
+		"rus" : "Голубь",
+		"greek" : "Columba"
+	},
+	"Com" : {
+		"rus" : "Волосы Вероники",
+		"greek" : "Coma Berenices"
+	},
+	"CrA" : {
+		"rus" : "Южная Корона",
+		"greek" : "Corona Australis"
+	},
+	"CrB" : {
+		"rus" : "Северная Корона",
+		"greek" : "Corona Borealis"
+	},
+	"Crt" : {
+		"rus" : "Чаша",
+		"greek" : "Crater"
+	},
+	"Cru" : {
+		"rus" : "Южный Крест",
+		"greek" : "Crux"
+	},
+	"Crv" : {
+		"rus" : "Ворон",
+		"greek" : "Corvus"
+	},
+	"CVn" : {
+		"rus" : "Гончие Псы",
+		"greek" : "Canes Venatici"
+	},
+	"Cyg" : {
+		"rus" : "Лебедь",
+		"greek" : "Cygnus"
+	},
+	"Del" : {
+		"rus" : "Дельфин",
+		"greek" : "Delphinus"
+	},
+	"Dor" : {
+		"rus" : "Золотая Рыба",
+		"greek" : "Dorado"
+	},
+	"Dra" : {
+		"rus" : "Дракон",
+		"greek" : "Draco"
+	},
+	"Equ" : {
+		"rus" : "Малый Конь",
+		"greek" : "Equuleus"
+	},
+	"Eri" : {
+		"rus" : "Эридан",
+		"greek" : "Eridanus"
+	},
+	"For" : {
+		"rus" : "Печь",
+		"greek" : "Fornax"
+	},
+	"Gem" : {
+		"rus" : "Близнецы",
+		"greek" : "Gemini"
+	},
+	"Gru" : {
+		"rus" : "Журавль",
+		"greek" : "Grus"
+	},
+	"Her" : {
+		"rus" : "Геркулес",
+		"greek" : "Hercules"
+	},
+	"Hor" : {
+		"rus" : "Часы",
+		"greek" : "Horologium"
+	},
+	"Hya" : {
+		"rus" : "Гидра",
+		"greek" : "Hydra"
+	},
+	"Hyi" : {
+		"rus" : "Южная Гидра",
+		"greek" : "Hydrus"
+	},
+	"Ind" : {
+		"rus" : "Индеец",
+		"greek" : "Indus"
+	},
+	"Lac" : {
+		"rus" : "Ящерица",
+		"greek" : "Lacerta"
+	},
+	"Leo" : {
+		"rus" : "Лев",
+		"greek" : "Leo"
+	},
+	"Lep" : {
+		"rus" : "Заяц",
+		"greek" : "Lepus"
+	},
+	"Lib" : {
+		"rus" : "Весы",
+		"greek" : "Libra"
+	},
+	"LMi" : {
+		"rus" : "Малый Лев",
+		"greek" : "Leo Minor"
+	},
+	"Lup" : {
+		"rus" : "Волк",
+		"greek" : "Lupus"
+	},
+	"Lyn" : {
+		"rus" : "Рысь",
+		"greek" : "Lynx"
+	},
+	"Lyr" : {
+		"rus" : "Лира",
+		"greek" : "Lyra"
+	},
+	"Men" : {
+		"rus" : "Столовая Гора",
+		"greek" : "Mensa"
+	},
+	"Mic" : {
+		"rus" : "Микроскоп",
+		"greek" : "Microscopium"
+	},
+	"Mon" : {
+		"rus" : "Единорог",
+		"greek" : "Monoceros"
+	},
+	"Mus" : {
+		"rus" : "Муха",
+		"greek" : "Musca"
+	},
+	"Nor" : {
+		"rus" : "Наугольник",
+		"greek" : "Norma"
+	},
+	"Oct" : {
+		"rus" : "Октант",
+		"greek" : "Octans"
+	},
+	"Oph" : {
+		"rus" : "Змееносец",
+		"greek" : "Ophiuchus"
+	},
+	"Ori" : {
+		"rus" : "Орион",
+		"greek" : "Orion"
+	},
+	"Pav" : {
+		"rus" : "Павлин",
+		"greek" : "Pavo"
+	},
+	"Peg" : {
+		"rus" : "Пегас",
+		"greek" : "Pegasus"
+	},
+	"Per" : {
+		"rus" : "Персей",
+		"greek" : "Perseus"
+	},
+	"Phe" : {
+		"rus" : "Феникс",
+		"greek" : "Phoenix"
+	},
+	"Pic" : {
+		"rus" : "Живописец",
+		"greek" : "Pictor"
+	},
+	"PsA" : {
+		"rus" : "Южная Рыба",
+		"greek" : "Pisces Austrinus"
+	},
+	"Psc" : {
+		"rus" : "Рыбы",
+		"greek" : "Pisces"
+	},
+	"Pup" : {
+		"rus" : "Корма",
+		"greek" : "Puppis"
+	},
+	"Pyx" : {
+		"rus" : "Компас",
+		"greek" : "Pyxis"
+	},
+	"Ret" : {
+		"rus" : "Сетка",
+		"greek" : "Reticulum"
+	},
+	"Scl" : {
+		"rus" : "Скульптор",
+		"greek" : "Sculptor"
+	},
+	"Sco" : {
+		"rus" : "Скорпион",
+		"greek" : "Scorpius"
+	},
+	"Sct" : {
+		"rus" : "Щит",
+		"greek" : "Scutum"
+	},
+	"Ser" : {
+		"rus" : "Змея",
+		"greek" : "Serpens"
+	},
+	"Sex" : {
+		"rus" : "Секстант",
+		"greek" : "Sextans"
+	},
+	"Sge" : {
+		"rus" : "Стрела",
+		"greek" : "Sagitta"
+	},
+	"Sgr" : {
+		"rus" : "Стрелец",
+		"greek" : "Sagittarius"
+	},
+	"Tau" : {
+		"rus" : "Телец",
+		"greek" : "Taurus"
+	},
+	"Tel" : {
+		"rus" : "Телескоп",
+		"greek" : "Telescopium"
+	},
+	"TrA" : {
+		"rus" : "Южный Треугольник",
+		"greek" : "Triangulum Australe"
+	},
+	"Tri" : {
+		"rus" : "Треугольник",
+		"greek" : "Triangulum"
+	},
+	"Tuc" : {
+		"rus" : "Тукан",
+		"greek" : "Tucana"
+	},
+	"UMa" : {
+		"rus" : "Большая Медведица",
+		"greek" : "Ursa Major"
+	},
+	"UMi" : {
+		"rus" : "Малая Медведица",
+		"greek" : "Ursa Minor"
+	},
+	"Vel" : {
+		"rus" : "Паруса",
+		"greek" : "Vela"
+	},
+	"Vir" : {
+		"rus" : "Дева",
+		"greek" : "Virgo"
+	},
+	"Vol" : {
+		"rus" : "Летучая Рыба",
+		"greek" : "Volans"
+	},
+	"Vul" : {
+		"rus" : "Лисичка",
+		"greek" : "Vulpecula"
+	}
+}
