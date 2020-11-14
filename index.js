@@ -20,6 +20,8 @@ robot.on('message', (msg) => { // Реагирование на сообщени
             for (comm_count in comms.comms) {
                 var comm2 = prefix + comms.comms[comm_count].name;
                 if (comm2 == comm_name) {
+                    messArr.splice(0, 1)
+                    messArr.pop();
                     comms.comms[comm_count].out(robot, msg, messArr);
                 }
             }
