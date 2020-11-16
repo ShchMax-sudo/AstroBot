@@ -1,11 +1,9 @@
 const Discord = require('discord.js');
 const config = require('../config.json');
 const constellations = require('./constellations.json')
+const Mutex = require('./mutex.js');
 const prefix = config.prefix;
 const versions = config.versions;
-
-var users = new Set();
-const MainChName = "боттание";
 
 class Tournir {
 	constructor() {
@@ -17,36 +15,14 @@ class Tournir {
 // Команды //
 
 function rules(robot, mess, args) {
-	if (mess.channel.name != MainChName) {
-		return;
-	}
 	mess.channel.send("Б.к.")
 }
 
 function hello(robot, mess, args) {
-	if (mess.channel.name != MainChName) {
-		return;
-	}
   	mess.reply("Привет!")
 }
 
-function remember(robot, mess, args) {
-	if (mess.channel.name != MainChName) {
-		return;
-	}
-	user = mess.author.username + "#" + mess.author.discriminator;
-	if (users.has(user)) {
-		mess.reply("Я тебя знаю!");
-	} else {
-		users.add(user);
-		mess.reply("Ты вообще кто");
-	}
-}
-
 function russian(robot, mess, args) {
-	if (mess.channel.name != MainChName) {
-		return;
-	}
 	if (args.length != 1) {
 		mess.reply("Я не понимаю, что вы хотите.")
 		return
@@ -60,9 +36,6 @@ function russian(robot, mess, args) {
 }
 
 function greek(robot, mess, args) {
-	if (mess.channel.name != MainChName) {
-		return;
-	}
 	if (args.length != 1) {
 		mess.reply("Я не понимаю, что вы хотите.")
 		return
@@ -76,9 +49,6 @@ function greek(robot, mess, args) {
 }
 
 function short(robot, mess, args) {
-	if (mess.channel.name != MainChName) {
-		return
-	}
 	if (args.length < 1) {
 		mess.reply("Я не понимаю, что вы хотите.")
 		return
@@ -123,7 +93,7 @@ var comms_list = [{
     	name: "short",
     	out: short,
     	about: "Сокращённое название созвездия по его русскому.",
-	}
+	},
 ]
 
 module.exports.comms = comms_list;
