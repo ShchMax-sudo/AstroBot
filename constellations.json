@@ -1,354 +1,1040 @@
 {
 	"And" : {
 		"rus" : "Андромеда",
+		"go" : [
+			"Cas",
+			"Lac",
+			"Peg",
+			"Per",
+			"Psc",
+			"Tri"
+		],
 		"greek" : "Andromeda"
 	},
 	"Ant" : {
 		"rus" : "Насос",
+		"go" : [
+			"Cen",
+			"Hya",
+			"Pyx",
+			"Vel"
+		],
 		"greek" : "Antlia"
 	},
 	"Aps" : {
 		"rus" : "Райская Птица",
+		"go" : [
+			"Ara",
+			"Cha",
+			"Cir",
+			"Mus",
+			"Oct",
+			"Pav",
+			"TrA"
+		],
 		"greek" : "Apus"
 	},
 	"Aql" : {
 		"rus" : "Орёл",
+		"go" : [
+			"Aqr",
+			"Cap",
+			"Del",
+			"Her",
+			"Oph",
+			"Sct",
+			"Ser",
+			"Sge",
+			"Sgr"
+		],
 		"greek" : "Aquila"
 	},
 	"Aqr" : {
 		"rus" : "Водолей",
+		"go" : [
+			"Aql",
+			"Cap",
+			"Cet",
+			"Del",
+			"Equ",
+			"Peg",
+			"PsA",
+			"Psc",
+			"Scl"
+		],
 		"greek" : "Aquarius"
 	},
 	"Ara" : {
 		"rus" : "Жертвенник",
+		"go" : [
+			"Aps",
+			"CrA",
+			"Nor",
+			"Pav",
+			"Sco",
+			"Tel",
+			"TrA"
+		],
 		"greek" : "Ara"
 	},
 	"Ari" : {
 		"rus" : "Овен",
+		"go" : [
+			"Cet",
+			"Per",
+			"Psc",
+			"Tau",
+			"Tri"
+		],
 		"greek" : "Aries"
 	},
 	"Aur" : {
 		"rus" : "Возничий",
+		"go" : [
+			"Cam",
+			"Gem",
+			"Lyn",
+			"Per",
+			"Tau"
+		],
 		"greek" : "Auriga"
 	},
 	"Boo" : {
 		"rus" : "Волопас",
+		"go" : [
+			"Com",
+			"CrB",
+			"CVn",
+			"Dra",
+			"Her",
+			"Ser",
+			"UMa",
+			"Vir"
+		],
 		"greek" : "Bootes"
 	},
 	"Cae" : {
 		"rus" : "Резец",
+		"go" : [
+			"Col",
+			"Dor",
+			"Eri",
+			"Hor",
+			"Lep",
+			"Pic"
+		],
 		"greek" : "Caelum"
 	},
 	"Cam" : {
 		"rus" : "Жираф",
+		"go" : [
+			"Aur",
+			"Cas",
+			"Cep",
+			"Dra",
+			"Lyn",
+			"Per",
+			"UMa",
+			"UMi"
+		],
 		"greek" : "Camelopardalis"
 	},
 	"Cap" : {
 		"rus" : "Козерог",
+		"go" : [
+			"Aql",
+			"Aqr",
+			"Mic",
+			"PsA",
+			"Sgr"
+		],
 		"greek" : "Capricornus"
 	},
 	"Car" : {
 		"rus" : "Киль",
+		"go" : [
+			"Cen",
+			"Cha",
+			"Mus",
+			"Pic",
+			"Pup",
+			"Vel",
+			"Vol"
+		],
 		"greek" : "Carina"
 	},
 	"Cas" : {
 		"rus" : "Кассиопея",
+		"go" : [
+			"And",
+			"Cam",
+			"Cep",
+			"Lac",
+			"Per"
+		],
 		"greek" : "Cassiopeia"
 	},
 	"Cen" : {
 		"rus" : "Центавр",
+		"go" : [
+			"Ant",
+			"Car",
+			"Cir",
+			"Cru",
+			"Hya",
+			"Lup",
+			"Mus",
+			"Vel"
+		],
 		"greek" : "Centaurus"
 	},
 	"Cep" : {
 		"rus" : "Цефей",
+		"go" : [
+			"Cam",
+			"Cas",
+			"Cyg",
+			"Dra",
+			"Lac",
+			"UMi"
+		],
 		"greek" : "Cepheus"
 	},
 	"Cet" : {
 		"rus" : "Кит",
+		"go" : [
+			"Aqr",
+			"Ari",
+			"Eri",
+			"For",
+			"Psc",
+			"Scl",
+			"Tau"
+		],
 		"greek" : "Cetus"
 	},
 	"Cha" : {
 		"rus" : "Хамелеон",
+		"go" : [
+			"Aps",
+			"Car",
+			"Men",
+			"Mus",
+			"Oct",
+			"Vol"
+		],
 		"greek" : "Chamaeleon"
 	},
 	"Cir" : {
 		"rus" : "Циркуль",
+		"go" : [
+			"Aps",
+			"Cen",
+			"Lup",
+			"Mus",
+			"Nor",
+			"TrA"
+		],
 		"greek" : "Circinus"
 	},
 	"CMa" : {
 		"rus" : "Большой Пёс",
+		"go" : [
+			"Col",
+			"Lep",
+			"Mon",
+			"Pup"
+		],
 		"greek" : "Canis Major"
 	},
 	"CMi" : {
 		"rus" : "Малый Пёс",
+		"go" : [
+			"Cnc",
+			"Gem",
+			"Hya",
+			"Mon"
+		],
 		"greek" : "Canis Minor"
 	},
 	"Cnc" : {
 		"rus" : "Рак",
+		"go" : [
+			"CMi",
+			"Gem",
+			"Hya",
+			"Leo",
+			"Lyn"
+		],
 		"greek" : "Cancer"
 	},
 	"Col" : {
 		"rus" : "Голубь",
+		"go" : [
+			"Cae",
+			"CMa",
+			"Lep",
+			"Pic",
+			"Pup"
+		],
 		"greek" : "Columba"
 	},
 	"Com" : {
 		"rus" : "Волосы Вероники",
+		"go" : [
+			"Boo",
+			"CVn",
+			"Leo",
+			"UMa",
+			"Vir"
+		],
 		"greek" : "Coma Berenices"
 	},
 	"CrA" : {
 		"rus" : "Южная Корона",
+		"go" : [
+			"Ara",
+			"Sco",
+			"Sgr",
+			"Tel"
+		],
 		"greek" : "Corona Australis"
 	},
 	"CrB" : {
 		"rus" : "Северная Корона",
+		"go" : [
+			"Boo",
+			"Her",
+			"Ser"
+		],
 		"greek" : "Corona Borealis"
 	},
 	"Crt" : {
 		"rus" : "Чаша",
+		"go" : [
+			"Crv",
+			"Hya",
+			"Leo",
+			"Sex",
+			"Vir"
+		],
 		"greek" : "Crater"
 	},
 	"Cru" : {
 		"rus" : "Южный Крест",
+		"go" : [
+			"Cen",
+			"Mus"
+		],
 		"greek" : "Crux"
 	},
 	"Crv" : {
 		"rus" : "Ворон",
+		"go" : [
+			"Crt",
+			"Hya",
+			"Vir"
+		],
 		"greek" : "Corvus"
 	},
 	"CVn" : {
 		"rus" : "Гончие Псы",
+		"go" : [
+			"Boo",
+			"Com",
+			"UMa"
+		],
 		"greek" : "Canes Venatici"
 	},
 	"Cyg" : {
 		"rus" : "Лебедь",
+		"go" : [
+			"Cep",
+			"Dra",
+			"Lac",
+			"Lyr",
+			"Peg",
+			"Vul"
+		],
 		"greek" : "Cygnus"
 	},
 	"Del" : {
 		"rus" : "Дельфин",
+		"go" : [
+			"Aql",
+			"Aqr",
+			"Equ",
+			"Peg",
+			"Sge",
+			"Vul"
+		],
 		"greek" : "Delphinus"
 	},
 	"Dor" : {
 		"rus" : "Золотая Рыба",
+		"go" : [
+			"Cae",
+			"Hor",
+			"Hyi",
+			"Men",
+			"Pic",
+			"Ret",
+			"Vol"
+		],
 		"greek" : "Dorado"
 	},
 	"Dra" : {
 		"rus" : "Дракон",
+		"go" : [
+			"Boo",
+			"Cam",
+			"Cep",
+			"Cyg",
+			"Her",
+			"Lyr",
+			"UMa",
+			"UMi"
+		],
 		"greek" : "Draco"
 	},
 	"Equ" : {
 		"rus" : "Малый Конь",
+		"go" : [
+			"Aqr",
+			"Del",
+			"Peg"
+		],
 		"greek" : "Equuleus"
 	},
 	"Eri" : {
 		"rus" : "Эридан",
+		"go" : [
+			"Cae",
+			"Cet",
+			"For",
+			"Hor",
+			"Hyi",
+			"Lep",
+			"Ori",
+			"Phe",
+			"Tau"
+		],
 		"greek" : "Eridanus"
 	},
 	"For" : {
 		"rus" : "Печь",
+		"go" : [
+			"Cet",
+			"Eri",
+			"Phe",
+			"Scl"
+		],
 		"greek" : "Fornax"
 	},
 	"Gem" : {
 		"rus" : "Близнецы",
+		"go" : [
+			"Aur",
+			"CMi",
+			"Cnc",
+			"Lyn",
+			"Mon",
+			"Ori",
+			"Tau"
+		],
 		"greek" : "Gemini"
 	},
 	"Gru" : {
 		"rus" : "Журавль",
+		"go" : [
+			"Ind",
+			"Mic",
+			"Phe",
+			"PsA",
+			"Scl",
+			"Tuc"
+		],
 		"greek" : "Grus"
 	},
 	"Her" : {
 		"rus" : "Геркулес",
+		"go" : [
+			"Aql",
+			"Boo",
+			"CrB",
+			"Dra",
+			"Lyr",
+			"Oph",
+			"Ser",
+			"Sge",
+			"Vul"
+		],
 		"greek" : "Hercules"
 	},
 	"Hor" : {
 		"rus" : "Часы",
+		"go" : [
+			"Cae",
+			"Dor",
+			"Eri",
+			"Hyi",
+			"Ret"
+		],
 		"greek" : "Horologium"
 	},
 	"Hya" : {
 		"rus" : "Гидра",
+		"go" : [
+			"Ant",
+			"Cen",
+			"CMi",
+			"Cnc",
+			"Crt",
+			"Crv",
+			"Leo",
+			"Lib",
+			"Mon",
+			"Pup",
+			"Pyx",
+			"Sex",
+			"Vir"
+		],
 		"greek" : "Hydra"
 	},
 	"Hyi" : {
 		"rus" : "Южная Гидра",
+		"go" : [
+			"Dor",
+			"Eri",
+			"Hor",
+			"Men",
+			"Oct",
+			"Ret",
+			"Tuc"
+		],
 		"greek" : "Hydrus"
 	},
 	"Ind" : {
 		"rus" : "Индеец",
+		"go" : [
+			"Gru",
+			"Mic",
+			"Oct",
+			"Pav",
+			"Tel",
+			"Tuc"
+		],
 		"greek" : "Indus"
 	},
 	"Lac" : {
 		"rus" : "Ящерица",
+		"go" : [
+			"And",
+			"Cas",
+			"Cep",
+			"Cyg",
+			"Peg"
+		],
 		"greek" : "Lacerta"
 	},
 	"Leo" : {
 		"rus" : "Лев",
+		"go" : [
+			"Cnc",
+			"Com",
+			"Crt",
+			"Hya",
+			"LMi",
+			"Sex",
+			"UMa",
+			"Vir"
+		],
 		"greek" : "Leo"
 	},
 	"Lep" : {
 		"rus" : "Заяц",
+		"go" : [
+			"Cae",
+			"CMa",
+			"Col",
+			"Eri",
+			"Mon",
+			"Ori"
+		],
 		"greek" : "Lepus"
 	},
 	"Lib" : {
 		"rus" : "Весы",
+		"go" : [
+			"Hya",
+			"Lup",
+			"Oph",
+			"Sco",
+			"Ser",
+			"Vir"
+		],
 		"greek" : "Libra"
 	},
 	"LMi" : {
 		"rus" : "Малый Лев",
+		"go" : [
+			"Leo",
+			"Lyn",
+			"UMa"
+		],
 		"greek" : "Leo Minor"
 	},
 	"Lup" : {
 		"rus" : "Волк",
+		"go" : [
+			"Cen",
+			"Cir",
+			"Lib",
+			"Nor",
+			"Sco"
+		],
 		"greek" : "Lupus"
 	},
 	"Lyn" : {
 		"rus" : "Рысь",
+		"go" : [
+			"Aur",
+			"Cam",
+			"Cnc",
+			"Gem",
+			"LMi",
+			"UMa"
+		],
 		"greek" : "Lynx"
 	},
 	"Lyr" : {
 		"rus" : "Лира",
+		"go" : [
+			"Cyg",
+			"Dra",
+			"Her",
+			"Vul"
+		],
 		"greek" : "Lyra"
 	},
 	"Men" : {
 		"rus" : "Столовая Гора",
+		"go" : [
+			"Cha",
+			"Dor",
+			"Hyi",
+			"Oct",
+			"Vol"
+		],
 		"greek" : "Mensa"
 	},
 	"Mic" : {
 		"rus" : "Микроскоп",
+		"go" : [
+			"Cap",
+			"Gru",
+			"Ind",
+			"PsA",
+			"Sgr"
+		],
 		"greek" : "Microscopium"
 	},
 	"Mon" : {
 		"rus" : "Единорог",
+		"go" : [
+			"CMa",
+			"CMi",
+			"Gem",
+			"Hya",
+			"Lep",
+			"Ori",
+			"Pup"
+		],
 		"greek" : "Monoceros"
 	},
 	"Mus" : {
 		"rus" : "Муха",
+		"go" : [
+			"Aps",
+			"Car",
+			"Cen",
+			"Cha",
+			"Cir",
+			"Cru"
+		],
 		"greek" : "Musca"
 	},
 	"Nor" : {
 		"rus" : "Наугольник",
+		"go" : [
+			"Ara",
+			"Cir",
+			"Lup",
+			"Sco",
+			"TrA"
+		],
 		"greek" : "Norma"
 	},
 	"Oct" : {
 		"rus" : "Октант",
+		"go" : [
+			"Aps",
+			"Cha",
+			"Hyi",
+			"Ind",
+			"Men",
+			"Pav",
+			"Tuc"
+		],
 		"greek" : "Octans"
 	},
 	"Oph" : {
 		"rus" : "Змееносец",
+		"go" : [
+			"Aql",
+			"Her",
+			"Lib",
+			"Sco",
+			"Ser",
+			"Sgr"
+		],
 		"greek" : "Ophiuchus"
 	},
 	"Ori" : {
 		"rus" : "Орион",
+		"go" : [
+			"Eri",
+			"Gem",
+			"Lep",
+			"Mon",
+			"Tau"
+		],
 		"greek" : "Orion"
 	},
 	"Pav" : {
 		"rus" : "Павлин",
+		"go" : [
+			"Aps",
+			"Ara",
+			"Ind",
+			"Oct",
+			"Tel"
+		],
 		"greek" : "Pavo"
 	},
 	"Peg" : {
 		"rus" : "Пегас",
+		"go" : [
+			"And",
+			"Aqr",
+			"Cyg",
+			"Del",
+			"Equ",
+			"Lac",
+			"Psc",
+			"Vul"
+		],
 		"greek" : "Pegasus"
 	},
 	"Per" : {
 		"rus" : "Персей",
+		"go" : [
+			"And",
+			"Ari",
+			"Aur",
+			"Cam",
+			"Cas",
+			"Tau",
+			"Tri"
+		],
 		"greek" : "Perseus"
 	},
 	"Phe" : {
 		"rus" : "Феникс",
+		"go" : [
+			"Eri",
+			"For",
+			"Gru",
+			"Scl",
+			"Tuc"
+		],
 		"greek" : "Phoenix"
 	},
 	"Pic" : {
 		"rus" : "Живописец",
+		"go" : [
+			"Cae",
+			"Car",
+			"Col",
+			"Dor",
+			"Pup",
+			"Vol"
+		],
 		"greek" : "Pictor"
 	},
 	"PsA" : {
 		"rus" : "Южная Рыба",
+		"go" : [
+			"Aqr",
+			"Cap",
+			"Gru",
+			"Mic",
+			"Scl"
+		],
 		"greek" : "Pisces Austrinus"
 	},
 	"Psc" : {
 		"rus" : "Рыбы",
+		"go" : [
+			"And",
+			"Aqr",
+			"Ari",
+			"Cet",
+			"Peg",
+			"Tri"
+		],
 		"greek" : "Pisces"
 	},
 	"Pup" : {
 		"rus" : "Корма",
+		"go" : [
+			"Car",
+			"CMa",
+			"Col",
+			"Hya",
+			"Mon",
+			"Pic",
+			"Pyx",
+			"Vel"
+		],
 		"greek" : "Puppis"
 	},
 	"Pyx" : {
 		"rus" : "Компас",
+		"go" : [
+			"Ant",
+			"Hya",
+			"Pup",
+			"Vel"
+		],
 		"greek" : "Pyxis"
 	},
 	"Ret" : {
 		"rus" : "Сетка",
+		"go" : [
+			"Dor",
+			"Hor",
+			"Hyi"
+		],
 		"greek" : "Reticulum"
 	},
 	"Scl" : {
 		"rus" : "Скульптор",
+		"go" : [
+			"Aqr",
+			"Cet",
+			"For",
+			"Gru",
+			"Phe",
+			"PsA"
+		],
 		"greek" : "Sculptor"
 	},
 	"Sco" : {
 		"rus" : "Скорпион",
+		"go" : [
+			"Ara",
+			"CrA",
+			"Lib",
+			"Lup",
+			"Nor",
+			"Oph",
+			"Sgr"
+		],
 		"greek" : "Scorpius"
 	},
 	"Sct" : {
 		"rus" : "Щит",
+		"go" : [
+			"Aql",
+			"Ser",
+			"Sgr"
+		],
 		"greek" : "Scutum"
 	},
 	"Ser" : {
 		"rus" : "Змея",
+		"go" : [
+			"Aql",
+			"Boo",
+			"CrB",
+			"Her",
+			"Lib",
+			"Oph",
+			"Sct",
+			"Sgr",
+			"Vir"
+		],
 		"greek" : "Serpens"
 	},
 	"Sex" : {
 		"rus" : "Секстант",
+		"go" : [
+			"Crt",
+			"Hya",
+			"Leo"
+		],
 		"greek" : "Sextans"
 	},
 	"Sge" : {
 		"rus" : "Стрела",
+		"go" : [
+			"Aql",
+			"Del",
+			"Her",
+			"Vul"
+		],
 		"greek" : "Sagitta"
 	},
 	"Sgr" : {
 		"rus" : "Стрелец",
+		"go" : [
+			"Aql",
+			"Cap",
+			"CrA",
+			"Mic",
+			"Oph",
+			"Sco",
+			"Sct",
+			"Ser",
+			"Tel"
+		],
 		"greek" : "Sagittarius"
 	},
 	"Tau" : {
 		"rus" : "Телец",
+		"go" : [
+			"Ari",
+			"Aur",
+			"Cet",
+			"Eri",
+			"Gem",
+			"Ori",
+			"Per"
+		],
 		"greek" : "Taurus"
 	},
 	"Tel" : {
 		"rus" : "Телескоп",
+		"go" : [
+			"Ara",
+			"CrA",
+			"Ind",
+			"Pav",
+			"Sgr"
+		],
 		"greek" : "Telescopium"
 	},
 	"TrA" : {
 		"rus" : "Южный Треугольник",
+		"go" : [
+			"Aps",
+			"Ara",
+			"Cir",
+			"Nor"
+		],
 		"greek" : "Triangulum Australe"
 	},
 	"Tri" : {
 		"rus" : "Треугольник",
+		"go" : [
+			"And",
+			"Ari",
+			"Per",
+			"Psc"
+		],
 		"greek" : "Triangulum"
 	},
 	"Tuc" : {
 		"rus" : "Тукан",
+		"go" : [
+			"Gru",
+			"Hyi",
+			"Ind",
+			"Oct",
+			"Phe"
+		],
 		"greek" : "Tucana"
 	},
 	"UMa" : {
 		"rus" : "Большая Медведица",
+		"go" : [
+			"Boo",
+			"Cam",
+			"Com",
+			"CVn",
+			"Dra",
+			"Leo",
+			"LMi",
+			"Lyn"
+		],
 		"greek" : "Ursa Major"
 	},
 	"UMi" : {
 		"rus" : "Малая Медведица",
+		"go" : [
+			"Cam",
+			"Cep",
+			"Dra"
+		],
 		"greek" : "Ursa Minor"
 	},
 	"Vel" : {
 		"rus" : "Паруса",
+		"go" : [
+			"Ant",
+			"Car",
+			"Cen",
+			"Pup",
+			"Pyx"
+		],
 		"greek" : "Vela"
 	},
 	"Vir" : {
 		"rus" : "Дева",
+		"go" : [
+			"Boo",
+			"Com",
+			"Crt",
+			"Crv",
+			"Hya",
+			"Leo",
+			"Lib",
+			"Ser"
+		],
 		"greek" : "Virgo"
 	},
 	"Vol" : {
 		"rus" : "Летучая Рыба",
+		"go" : [
+			"Car",
+			"Cha",
+			"Dor",
+			"Men",
+			"Pic"
+		],
 		"greek" : "Volans"
 	},
 	"Vul" : {
 		"rus" : "Лисичка",
+		"go" : [
+			"Cyg",
+			"Del",
+			"Her",
+			"Lyr",
+			"Peg",
+			"Sge"
+		],
 		"greek" : "Vulpecula"
 	}
 }
