@@ -5,12 +5,93 @@ const Mutex = require('./mutex.js');
 const prefix = config.prefix;
 const versions = config.versions;
 
+var consts = []
+for (var UNname in constellations) {
+	consts.push(UNname)
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 class Tournir {
 	constructor() {
-		this.g = constellations;
 		this.was = new Set();
+		this.players = [];
+		this.now = 0;
+		this.started = false;
+		this.const = consts[getRandomInt(consts.length)];
+		this.was.add(this.const);
+		this.end = false;
+	}
+
+	addUser(mess, name) {
+		if (this.end) {
+			mess.reply("Игра уже окончена.")
+			return;
+		}
+		if (!this.started) {
+			this.players.push(name);
+			mess.reply("Приветствую в турнире.")
+		} else {
+			mess.reply("Турнир уже начался.")
+		}
+	}
+
+	start(mess) {
+		if (this.end) {
+			mess.reply("Игра уже окончена.")
+			return;
+		}
+		if (this.started) {
+			mess.reply("Турнир уже начался.")
+		} else {
+			mess.channel.send("Турнир начался.")
+			mess.channel.send(this.const)
+		}
+		this.started = true;
+	}
+
+	step(mess, name, val) {
+		if (this.end) {
+			mess.reply("Игра уже окончена.")
+			return;
+		}
+		if (name !== this.players[this.now]) {
+			mess.reply("Не твой ход!")
+		} else {
+			if (constellations[val] === undefined) {
+				mess.reply("Нет такого созвездия.");
+			} else if (constellations[this.const].go.indexOf(val) > -1) {
+				if (this.was.has(val)) {
+					mess.reply("Уже там были.");
+				} else {
+					mess.channel.send("Зачтено.");
+					this.was.add(val);
+					this.const = val;
+					this.now++;
+					this.now %= this.players.length;
+				}
+			} else {
+				mess.reply("Нельзя сделать такой переход.");
+			}
+		}
+	}
+
+	cant() {
+		if (this.end) {
+			return true;
+		}
+		for (var g in constellations[this.const].go) {
+			if (!this.was.has(constellations[this.const].go[g])) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
+
+var tours = {};
 
 // Команды //
 
@@ -67,12 +148,137 @@ function short(robot, mess, args) {
 	}
 }
 
+function clear(robot, mess, args) {
+	const arggs = mess.content.split(' ').slice(1);
+	const amount = arggs.join(' ');
+	if (!amount) {
+		return mess.channel.send('Вы не указали, сколько сообщений нужно удалить.');
+	}
+	if (isNaN(amount)) {
+		return mess.channel.send('Это не число.');
+	}
+	if (amount > 100) {
+		return mess.channel.send('Вы не можете удалить 100 сообщений за раз.');
+	}
+	if (amount < 1) {
+		return mess.channel.send('Вы должны ввести число больше чем 1.');
+	}
+	async function delete_messages() {
+
+	    await mess.channel.messages.fetch({
+	        limit: amount
+	    }).then(messages => {
+	        mess.channel.bulkDelete(messages)
+	        // mess.channel.send(`Удалено ${amount} сообщений!`)
+	    })
+	};
+	delete_messages();
+}
+
+function fadd(robot, mess, args) {
+	var channame = mess.channel.id;
+	var name = mess.author.id;
+	if (args.length > 0) {
+		mess.reply("Зачем параметры?");
+		return
+	}
+	if (tours[channame] === undefined) {
+		mess.reply("Игра не создана.");
+	} else {
+		while (!tours[channame].lock(name)) {}
+		var game = tours[channame].get(name);
+		game.addUser(mess, name);
+		tours[channame].set(name, game);
+		tours[channame].unlock(name);
+	}
+}
+
+function fnew(robot, mess, args) {
+	var channame = mess.channel.id;
+	var name = mess.author.id;
+	if (args.length > 0) {
+		mess.reply("Зачем параметры?");
+		return;
+	}
+	if (tours[channame] === undefined) {
+		tours[channame] = new Mutex(new Tournir());
+		mess.channel.send("Начинаем набор команды")
+	} else {
+		while (!tours[channame].lock(name)) {}
+		if (tours[channame].get(name).end == true) {
+			tours[channame] = new Mutex(new Tournir());
+			mess.channel.send("Начинаем набор команды")
+		} else {
+			mess.reply("Игра уже не началась.")
+		}
+	}
+}
+
+function fstart(robot, mess, args) {
+	var channame = mess.channel.id;
+	var name = mess.author.id;
+	if (args.length > 0) {
+		mess.reply("Зачем параметры?");
+		return;
+	} else if (tours[channame] === undefined) {
+		mess.reply("Игра ещё не создана.");
+		return;
+	} else {
+		while (!tours[channame].lock(name)) {}
+		var game = tours[channame].get(name);
+		game.start(mess);
+		tours[channame].set(name, game);
+		tours[channame].unlock(name);
+	}
+}
+
+function fend(robot, mess, args) {
+	var channame = mess.channel.id;
+	var name = mess.author.id;
+	if (args.length > 0) {
+		mess.reply("Зачем параметры?");
+		return;
+	} else if (tours[channame] === undefined) {
+		mess.reply("Игра ещё не создана.");
+		return;
+	} else {
+		while (!tours[channame].lock(name)) {}
+		var game = tours[channame].get(name);
+		game.end = true;
+		tours[channame].set(name, game);
+		tours[channame].unlock(name);
+		mess.channel.send("Игра окончена.");
+	}
+}
+
+function fstep(robot, mess, args) {
+	var channame = mess.channel.id;
+	var name = mess.author.id;
+	if (args.length < 1) {
+		mess.reply("А сам ход где?")
+		return
+	} else if (args.length > 1) {
+		mess.reply("Не понимаю, чего ты хочешь.")
+	} else {
+		while (!tours[channame].lock(name)) {}
+		var game = tours[channame].get(name);
+		game.step(mess, name, args[0]);
+		if (game.cant()) {
+			mess.channel.send("Больше нет возможности ходить.");
+			game.end = true;
+			mess.channel.send("Игра окончена.");
+		}
+		tours[channame].set(name, game);
+		tours[channame].unlock(name);
+	}
+}
+
 // Список комманд //
 
 var comms_list = [{
     	name: "rules",
     	out: rules,
-    	about: "Правила турнира"
+    	about: "Правила турнира."
   	},
   	{
     	name: "hello",
@@ -93,6 +299,36 @@ var comms_list = [{
     	name: "short",
     	out: short,
     	about: "Сокращённое название созвездия по его русскому.",
+	},
+	{
+    	name: "clear",
+    	out: clear,
+    	about: "Удаление сообщений в чате.",
+	},
+	{
+    	name: "fadd",
+    	out: fadd,
+    	about: "Добавление игрока к первому туру.",
+	},
+	{
+    	name: "fnew",
+    	out: fnew,
+    	about: "Новая игра первого тура.",
+	},
+	{
+    	name: "fstart",
+    	out: fstart,
+    	about: "Стартует игру первого тура.",
+	},
+	{
+    	name: "fstep",
+    	out: fstep,
+    	about: "Сам ход первого тура.",
+	},
+	{
+    	name: "fend",
+    	out: fend,
+    	about: "Окончание первого тура.",
 	},
 ]
 
