@@ -6,6 +6,24 @@ let config = require('../config.json'); // Подключаем файл с па
 let token = config.token; // «Вытаскиваем» из него токен
 let prefix = config.prefix; // «Вытаскиваем» из него префикс
 
+function help(robot, mess, args) {
+    if (args.length > 0) {
+        mess.reply("Слишком много аргументов.");
+    } else {
+        var ans = "\n";
+        for (comm_count in comms.comms) {
+            ans += "$" + comms.comms[comm_count].name + " - " + comms.comms[comm_count].about + "\n";
+        }
+        mess.reply(ans);
+    }
+}
+
+comms.comms.push({
+    name: "help",
+    out: help,
+    about: "Помощь в пользовании ботом.",
+});
+
 robot.on("ready", function() {
     /* При успешном запуске, в консоли появится сообщение «[Имя бота] запустился!» */
     console.log(robot.user.username + " запустился!");

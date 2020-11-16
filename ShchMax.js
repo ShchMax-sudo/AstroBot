@@ -18,6 +18,7 @@ class Tournir {
 	constructor() {
 		this.was = new Set();
 		this.players = [];
+		this.errors = [];
 		this.now = 0;
 		this.started = false;
 		this.const = consts[getRandomInt(consts.length)];
@@ -32,6 +33,7 @@ class Tournir {
 		}
 		if (!this.started) {
 			this.players.push(name);
+			this.errors.push(3);
 			mess.reply("Приветствую в турнире.")
 		} else {
 			mess.reply("Турнир уже начался.")
@@ -57,13 +59,16 @@ class Tournir {
 			mess.reply("Игра уже окончена.")
 			return;
 		}
+		var last = this.now;
 		if (name !== this.players[this.now]) {
 			mess.reply("Не твой ход!")
 		} else {
 			if (constellations[val] === undefined) {
+				this.errors[this.now]--;
 				mess.reply("Нет такого созвездия.");
 			} else if (constellations[this.const].go.indexOf(val) > -1) {
 				if (this.was.has(val)) {
+					this.errors[this.now]--;
 					mess.reply("Уже там были.");
 				} else {
 					mess.channel.send("Зачтено.");
@@ -73,8 +78,13 @@ class Tournir {
 					this.now %= this.players.length;
 				}
 			} else {
+				this.errors[this.now]--;
 				mess.reply("Нельзя сделать такой переход.");
 			}
+		}
+		if (this.errors[last] < 0) {
+			mess.reply("Слишком много ошибок.");
+			return -1;
 		}
 	}
 
@@ -262,15 +272,25 @@ function fstep(robot, mess, args) {
 	} else {
 		while (!tours[channame].lock(name)) {}
 		var game = tours[channame].get(name);
-		game.step(mess, name, args[0]);
+		var verd = game.step(mess, name, args[0]);
 		if (game.cant()) {
 			mess.channel.send("Больше нет возможности ходить.");
+			if (game.was.size == 88) {
+				mess.channel.send("Не могу поверить! Вы прошлись по всем созаездиям!");
+			}
+			game.end = true;
+			mess.channel.send("Игра окончена.");
+		} else if (verd == -1) {
 			game.end = true;
 			mess.channel.send("Игра окончена.");
 		}
 		tours[channame].set(name, game);
 		tours[channame].unlock(name);
 	}
+}
+
+function about(robot, mess, args) {
+	mess.channel.send(`Я - **AstroBot**. Я могу помочь с названиями созвездий (например перевод из краткой формы в полную русскую.). Также я могу устравивать Турнир Угольникова (для этого я и был создан). По всем вопросам к автору: ShchMax#0301. Исходники бота - https://github.com/ShchMax-sudo/AstroBot. Для большей информации воспользуйтесь командой \`$help\``);
 }
 
 // Список комманд //
@@ -329,6 +349,11 @@ var comms_list = [{
     	name: "fend",
     	out: fend,
     	about: "Окончание первого тура.",
+	},
+	{
+    	name: "about",
+    	out: about,
+    	about: "Кратко описание бота.",
 	},
 ]
 
